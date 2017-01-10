@@ -5,6 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+/**
+ * App Modules
+ */
+import { TodoModule } from './shared/core/todo';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +17,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    TodoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
